@@ -4,6 +4,7 @@ const {userRouter} = require('./routes/user.routes.js');
 const {cityRouter} = require('./routes/city.routes.js');
 const winston = require('winston');
 const expresswinston = require('express-winston');
+const {redis} = require('./redis.js');
 
 require('dotenv').config();
 

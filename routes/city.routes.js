@@ -12,10 +12,6 @@ cityRouter.get('/:ipAddress', auth, async function (req, res) {
     let data;
     const exist = await redis.exists(ipAddress);
 
-    // console.log(exist);
-    // data = await redis.get(ipAddress);
-    // console.log(data);
-
     if (exist) {
         data = await redis.get(ipAddress);
 
