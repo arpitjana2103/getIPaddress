@@ -30,6 +30,7 @@ cityRouter.get('/:ipAddress', auth, async function (req, res) {
         return res.status(200).json({
             status: 'ok',
             userName: req.body.userName,
+            ipAddress: ipAddress,
             city: data,
         });
     } else {
@@ -49,6 +50,7 @@ cityRouter.get('/:ipAddress', auth, async function (req, res) {
         return res.status(200).json({
             status: 'ok',
             userName: req.body.userName,
+            ipAddress: ipAddress,
             city: data.city,
         });
     }
