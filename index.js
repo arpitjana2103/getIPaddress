@@ -26,8 +26,8 @@ app.use(express.json());
 app.use('/users', userRouter);
 app.use('/getCity', cityRouter);
 
-app.listen(process.env.PORT, async function () {
+app.listen(process.env.port, async function () {
     console.log('Server is in Process...');
     await connection;
-    console.log(`server URL : http://localhost:${process.env.PORT}`);
+    console.log(`server URL : http://localhost:${process.env.port}`);
 });
